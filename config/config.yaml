@@ -1,0 +1,13 @@
+openai:
+  model: "gpt-4o"
+  temperature: 0.7      # higher temp for creative writing; Researcher uses 0.2 override
+
+pipeline:
+  output_dir: "outputs"
+  max_iterations: 3     # CrewAI task retry budget
+  verbose: true         # log each agent's reasoning steps
+
+content:
+  default_word_count: 800
+  default_tone: "professional"      # professional | conversational | technical
+  default_audience: "general"       # general | technical | executive
